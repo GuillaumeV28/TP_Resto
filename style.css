@@ -13,16 +13,29 @@ body {
     font-size: 3rem;
     text-transform: uppercase;
 }
+.navbar {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
 
-/* Bannière (page d'accueil) */
+/* Bannière*/
 .hero {
-    background: url('assets/img/interieur.jpg') no-repeat center center/cover;
-    height: 70vh;
+    background: url('assets/img/interieur2.webp') no-repeat center center/cover;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.logo-banner {
+    max-width: 300px;
+    display: block;
+    margin: 50px auto -70px auto;
+}
+
 
 .hero .overlay {
     background: rgba(0, 0, 0, 0.6);
@@ -75,4 +88,12 @@ section {
     height: 250px;
     object-fit: cover;
     width: 100%;
+}
+
+section {
+    background: url('assets/img/tapisserie.png') no-repeat center center/cover;
+    background-size: cover;
+    width: 100vw;
+    padding: 60px 0;
+    /*filter: brightness(0.7);*/
 }
