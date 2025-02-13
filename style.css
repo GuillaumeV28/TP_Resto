@@ -240,7 +240,7 @@ footer a:hover {
 /* Style pour la page de réservation */
 .reservation-section {
     position: relative;
-    background: url('assets/img/tapisserie.png') no-repeat center center/cover;
+    background: url('assets/img/tapisserie.webp') no-repeat center center/cover;
     background-size: cover;
     width: 100vw;
     padding: 60px 0;
@@ -276,4 +276,64 @@ footer a:hover {
 .reservation-form input,
 .reservation-form select {
     color: black; /* Texte des champs en noir */
+}
+
+
+/* Section "Notre Chef" avec tapisserie */
+.chef-section {
+    position: relative;
+    background: url('assets/img/tapisserie.webp') no-repeat center center/cover;
+    background-size: cover;
+    width: 100vw;
+    padding: 60px 0;
+}
+
+/* Assombrir légèrement le fond sans affecter le texte */
+.chef-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Effet sombre */
+    z-index: 1;
+}
+
+/* Assurer que le texte et l’image ne sont pas affectés */
+.chef-section .container {
+    position: relative;
+    z-index: 2; /* Passe au-dessus de l’overlay */
+    color: white; /* Texte en blanc */
+}
+
+/* Image du chef en rond */
+.chef-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0d0d0e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre */
+    transition: transform 0.3s ease-in-out;
+}
+
+.chef-img:hover {
+    transform: scale(1.05); /* Zoom léger */
+}
+
+/* Mettre le titre "Notre Chef Étoilé" en blanc */
+.chef-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
