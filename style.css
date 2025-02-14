@@ -59,7 +59,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* Section "À propos" avec tapisserie */
+
 .index-section {
     position: relative;
     background: url('assets/img/tapisserie.png') no-repeat center center/cover;
@@ -68,7 +68,7 @@ body {
     padding: 60px 0;
 }
 
-/* Assombrit uniquement le fond, mais pas le contenu */
+
 .index-section::before {
     content: "";
     position: absolute;
@@ -76,47 +76,46 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Assombrissement */
-    z-index: 1; /* L’overlay reste derrière */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
 }
 
-/* Contenu de la section (texte + image) */
+
 .index-section .container {
     position: relative;
-    z-index: 2; /* Passe au-dessus de l'overlay */
+    z-index: 2; 
 }
 
-/* Assurer que le texte et l’image ne sont pas affectés */
+
 .index-section h2,
 .index-section p,
 .index-section a,
 .index-section img {
-    color: white !important; /* Rendre le texte bien visible */
+    color: white !important;
     position: relative;
     z-index: 2;
 }
 
-/* Animation au survol des images dans "Nos spécialités" et "Menu" */
 .card-img-top {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover .card-img-top {
-    transform: scale(1.05); /* Zoom léger */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Animation au survol du formulaire de réservation */
+
 .reservation-form {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .reservation-form:hover {
-    transform: scale(1.02); /* Léger agrandissement */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Animation au survol de l’image "intérieur" dans la section "À propos" */
+
 .index-section img {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -129,15 +128,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-/* Barre de navigation du menu */
 .menu-nav {
     text-align: center;
     padding: 15px 0;
@@ -147,24 +137,24 @@ body {
 }
 
 .menu-nav a {
-    color: white; /* Texte blanc */
+    color: white;
     font-size: 1.2rem;
     text-decoration: none;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
-    background-color: transparent; /* Fond transparent */
-    border: 2px solid white; /* Bordure blanche */
+    background-color: transparent;
+    border: 2px solid white;
     transition: background 0.3s, color 0.3s;
 }
 
 .menu-nav a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Fond légèrement gris */
-    color: white; /* Le texte reste blanc */
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 
-/* Sections avec tapisserie */
+
 .menu-section, .index-section {
     position: relative;
     background: url('assets/img/tapisserie.webp') no-repeat center center/cover;
@@ -181,7 +171,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Assombrit légèrement */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .menu-section .container {
@@ -190,13 +180,13 @@ body {
 }
 
 
-/* Formulaire focus */
+
 .form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Boutons */
+
 .btn-primary {
     background-color: #0d0d0e;
     border: none;
@@ -228,7 +218,7 @@ footer a:hover {
     src: url('assets/fonts/Capi.ttf') format('truetype');
 }
 
-/* Titre des sections */
+
 .menu-title {
     font-family: 'Capi', sans-serif;
     font-size: 2.5rem;
@@ -237,7 +227,7 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
-/* Style pour la page de réservation */
+
 .reservation-section {
     position: relative;
     background: url('assets/img/tapisserie.webp') no-repeat center center/cover;
@@ -253,7 +243,7 @@ footer a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Assombrit légèrement pour améliorer la lisibilité */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .reservation-section .container {
@@ -262,7 +252,7 @@ footer a:hover {
     color: white;
 }
 
-/* Style du formulaire */
+
 .reservation-form {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
@@ -270,16 +260,16 @@ footer a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .reservation-form label {
-    color: black; /* Couleur des labels en noir */
+    color: black;
 }
 
 .reservation-form input,
 .reservation-form select {
-    color: black; /* Texte des champs en noir */
+    color: black;
 }
 
 
-/* Section "Notre Chef" avec tapisserie */
+
 .chef-section {
     position: relative;
     background: url('assets/img/tapisserie.webp') no-repeat center center/cover;
@@ -288,7 +278,7 @@ footer a:hover {
     padding: 60px 0;
 }
 
-/* Assombrir légèrement le fond sans affecter le texte */
+
 .chef-section::before {
     content: "";
     position: absolute;
@@ -296,33 +286,32 @@ footer a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Effet sombre */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-/* Assurer que le texte et l’image ne sont pas affectés */
+
 .chef-section .container {
     position: relative;
-    z-index: 2; /* Passe au-dessus de l’overlay */
-    color: white; /* Texte en blanc */
+    z-index: 2;
+    color: white;
 }
 
-/* Image du chef en rond */
+
 .chef-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #0d0d0e;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
 .chef-img:hover {
-    transform: scale(1.05); /* Zoom léger */
+    transform: scale(1.05);
 }
 
-/* Mettre le titre "Notre Chef Étoilé" en blanc */
 .chef-section h2 {
     color: white;
     font-size: 2.5rem;
